@@ -12,7 +12,7 @@
       (load (concat user-emacs-directory "conf/" conf)))
     (and (equal window-system 'ns)
          (dolist (conf (list
-                        "cocoa-font.el"
+                        "cocoa-init.el"
                         ))
            (load (concat user-emacs-directory "conf/" conf))))
     (and (null window-system)
