@@ -13,6 +13,14 @@
       scroll-step            1)
 (setq comint-scroll-show-maximum-output t)
 
+;; ignore visual bell and ring bell
+(setq visible-bell nil)
+(setq ring-bell-function '(lambda ()))
+
+;; tab setting
+(setq-default indent-tabs-mode nil)     ; indent by space
+(setq-default tab-width 4)              ; tab width
+
 ;;; display settings
 
 ;; show column number
