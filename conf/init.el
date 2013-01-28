@@ -45,3 +45,7 @@
 (global-set-key [f3] 'start-kbd-macro)
 (global-set-key [f4] 'end-kbd-macro)
 (global-set-key [f5] 'call-last-kbd-macro)
+
+;;; themes
+(add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/"))
+(load-theme 'dark-laptop t)
