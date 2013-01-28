@@ -19,4 +19,5 @@
         '(
           el-get
           anything
+          markdown-mode
           ))
