@@ -18,6 +18,6 @@
 (el-get 'sync
         '(
           el-get
-          anything
+          helm
           markdown-mode
           ))
