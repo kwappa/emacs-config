@@ -25,6 +25,12 @@
 (setq-default indent-tabs-mode nil)     ; indent by space
 (setq-default tab-width 4)              ; tab width
 
+;; helm-mode
+(helm-mode 1)
+(global-set-key (kbd "M-x") 'helm-M-x)
+(load "term/bobcat")                    ; disable help by C-h at minibuffer
+(when (fboundp 'terminal-init-bobcat) (terminal-init-bobcat))
+
 ;; dired
 (load "dired-x")
 ;; show directory on top
