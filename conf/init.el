@@ -64,3 +64,15 @@
 ;;; themes
 (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/"))
 (load-theme 'dark-laptop t)
+
+;;; indent
+(add-hook 'c-mode-common-hook
+          '(lambda ()
+             (c-set-style "k&r")
+             (c-set-offset 'case-label     '+)
+             (c-set-offset 'inline-open     0)
+             (c-set-offset 'statement-cont  0)
+             (c-set-offset 'arglist-close   0)
+             (c-set-offset 'inexpr-class    0)
+             (setq c-basic-offset 4 indent-tabs-mode nil)
+             ))
