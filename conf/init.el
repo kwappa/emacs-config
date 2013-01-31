@@ -21,6 +21,16 @@
 (setq-default indent-tabs-mode nil)     ; indent by space
 (setq-default tab-width 4)              ; tab width
 
+;; dired
+(load "dired-x")
+;; show directory on top
+(load-library "ls-lisp")
+(setq ls-lisp-use-insert-directory-program nil)
+(setq ls-lisp-dirs-first t)
+;; up to parent directory : delete, C-h
+(define-key dired-mode-map "\d"   'dired-up-directory)
+(define-key dired-mode-map "\C-h" 'dired-up-directory)
+
 ;;; display settings
 
 ;; show column number
