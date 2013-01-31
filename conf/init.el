@@ -1,5 +1,11 @@
 ;;; behavior settings
 
+;; helm-mode
+(helm-mode 1)
+(global-set-key (kbd "M-x") 'helm-M-x)
+(load "term/bobcat")                    ; disable help by C-h at minibuffer
+(when (fboundp 'terminal-init-bobcat) (terminal-init-bobcat))
+
 ;; load-path
 (add-to-list 'load-path (concat user-emacs-directory "/elisp"))
 

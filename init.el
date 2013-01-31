@@ -4,8 +4,8 @@
     ((user-emacs-directory
       (substring (or load-file-name "~/.emacs.d/init.el") 0 -7))
      (conf-list (list
-                 "init.el"
                  "el-get.el"
+                 "init.el"
                  )))
   (progn
     (dolist (conf conf-list)
