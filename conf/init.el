@@ -76,3 +76,12 @@
              (c-set-offset 'inexpr-class    0)
              (setq c-basic-offset 4 indent-tabs-mode nil)
              ))
+;;; my functions
+(load "my-functions")
+;; toggle truncate
+(global-set-key [f8] 'my-toggle-truncate)
+;; page-up / down like WZ
+(global-set-key "\C-v" 'my-scroll-up)
+(global-set-key "\M-v" 'my-scroll-down)
+;; draw line
+(global-set-key "\C-cf" 'my-draw-line)
