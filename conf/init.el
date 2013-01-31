@@ -56,6 +56,11 @@
 (global-unset-key "\C-xm")              ; compose-mail
 (global-unset-key "\C-z")               ; suspend-frame
 
+;; next / previous window
+(global-set-key "\M-n" 'next-multiframe-window)
+(global-set-key "\M-p" 'previous-multiframe-window)
+
+
 ;; assign keyboard macro to function keys
 (global-set-key [f3] 'start-kbd-macro)
 (global-set-key [f4] 'end-kbd-macro)
