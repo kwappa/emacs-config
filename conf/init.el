@@ -100,3 +100,12 @@
 (global-set-key "\M-v" 'my-scroll-down)
 ;; draw line
 (global-set-key "\C-cf" 'my-draw-line)
+
+;;; auto-mode-alist
+(setq auto-mode-alist
+      (append '(
+                ("Rakefile" . ruby-mode)
+                ("Gemfile"  . ruby-mode)
+                ("\\.ru$"   . ruby-mode)
+                )
+              auto-mode-alist))
