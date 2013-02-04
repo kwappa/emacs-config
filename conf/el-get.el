@@ -20,4 +20,5 @@
           el-get
           helm
           markdown-mode
+          git-commit-mode
           ))
