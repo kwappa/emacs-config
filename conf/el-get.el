@@ -21,4 +21,5 @@
           helm
           markdown-mode
           git-commit-mode
+          haml-mode
           ))
