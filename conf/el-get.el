@@ -22,4 +22,5 @@
           markdown-mode
           git-commit-mode
           haml-mode
+          coffee-mode
           ))
