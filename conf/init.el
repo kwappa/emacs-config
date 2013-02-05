@@ -17,6 +17,9 @@
       scroll-step            1)
 (setq comint-scroll-show-maximum-output t)
 
+;; enable auto revert
+(global-auto-revert-mode 1)
+
 ;; ignore visual bell and ring bell
 (setq visible-bell nil)
 (setq ring-bell-function '(lambda ()))
