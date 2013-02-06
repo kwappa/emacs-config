@@ -23,4 +23,5 @@
           git-commit-mode
           haml-mode
           coffee-mode
+          scss-mode
           ))
