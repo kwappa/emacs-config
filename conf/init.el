@@ -94,6 +94,9 @@
              (c-set-offset 'inexpr-class    0)
              (setq c-basic-offset 4 indent-tabs-mode nil)
              ))
+;; ruby indent
+(load "ruby-indent")
+
 ;;; my functions
 (load "my-functions")
 ;; toggle truncate
