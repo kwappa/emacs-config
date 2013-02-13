@@ -2,4 +2,7 @@
        :description "Major mode for editing SCSS files(http://sass-lang.com)"
        :type github
        :pkgname "antonj/scss-mode"
-       :features scss-mode)
+       :features scss-mode
+       :prepare
+         (setq scss-compile-at-save nil)
+       )
