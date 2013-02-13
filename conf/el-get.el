@@ -24,4 +24,5 @@
           haml-mode
           coffee-mode
           scss-mode
+          rhtml-mode
           ))
