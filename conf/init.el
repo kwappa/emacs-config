@@ -73,11 +73,13 @@
 (global-set-key "\M-n" 'next-multiframe-window)
 (global-set-key "\M-p" 'previous-multiframe-window)
 
-
 ;; assign keyboard macro to function keys
 (global-set-key [f3] 'start-kbd-macro)
 (global-set-key [f4] 'end-kbd-macro)
 (global-set-key [f5] 'call-last-kbd-macro)
+
+;; disable 'toggle-input-mode' and assign C-\
+(global-set-key "\C-\\" 'delete-horizontal-space)
 
 ;;; themes
 (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/"))
