@@ -1,3 +1,11 @@
+;;; environment settings
+(if
+    (file-readable-p
+     (concat user-emacs-directory "conf/cocoa-env.el"))
+    (load (concat user-emacs-directory "conf/cocoa-env.el"))
+  (setq cocoa-default-font-size 16)
+  )
+
 ;; disable tool bar and menu bar
 (tool-bar-mode  0)
 (menu-bar-mode -1)
@@ -15,7 +23,7 @@
 ;;      00112233440011223344001122334400112233440011223344
 ;; =============================================================================
 (let* ((fontset-name "ricty") ; フォントセットの名前
-       (size 16) ; ASCIIフォントのサイズ [9/10/12/14/15/17/19/20/...]
+       (size cocoa-default-font-size) ; ASCIIフォントのサイズ [9/10/12/14/15/17/19/20/...]
        (asciifont "Ricty") ; ASCIIフォント
        (jpfont    "Ricty") ; 日本語フォント
        (font (format "%s-%d:weight=normal:slant=normal" asciifont size))
