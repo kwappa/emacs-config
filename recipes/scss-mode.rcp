@@ -4,5 +4,9 @@
        :pkgname "antonj/scss-mode"
        :features scss-mode
        :prepare
-         (setq scss-compile-at-save nil)
+       (setq scss-compile-at-save nil)
+       :post-init
+       (add-hook 'scss-mode-hook '(lambda()
+                                    (setq css-indent-offset 2)
+                                    ))
        )
