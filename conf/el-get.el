@@ -25,4 +25,5 @@
           coffee-mode
           scss-mode
           rhtml-mode
+          redo+
           ))

@@ -1,0 +1,5 @@
+(:name redo+
+       :description "redo+.el is bug fix and extended version of XEmacs' redo package."
+       :website "http://emacswiki.org/emacs/redo+.el"
+       :type emacswiki
+       :features "redo+")

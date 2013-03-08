@@ -81,6 +81,12 @@
 ;; disable 'toggle-input-mode' and assign C-\
 (global-set-key "\C-\\" 'delete-horizontal-space)
 
+;; undo / redo
+(global-set-key (kbd "C-/")   'undo)    ; for cocoa
+(global-set-key (kbd "C-M-/") 'redo)    ; for cocoa
+(global-set-key (kbd "C-_")   'undo)    ; for terminal
+(global-set-key (kbd "C-M-_") 'redo)    ; for terminal
+
 ;;; themes
 (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/"))
 (load-theme 'dark-laptop t)
