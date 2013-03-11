@@ -55,10 +55,8 @@
 ;; highlite paren
 (show-paren-mode t)
 
-;; highlite current line
-(defface hlline-face  '((t (:background "dark slate gray"))) nil)
-(setq hl-line-face 'hlline-face)
-(global-hl-line-mode)
+;; color setting
+(load "color-setting")
 
 ;;; key settings
 
