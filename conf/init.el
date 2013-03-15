@@ -119,5 +119,6 @@
                 ("Rakefile" . ruby-mode)
                 ("Gemfile"  . ruby-mode)
                 ("\\.ru$"   . ruby-mode)
+                ("COMMIT_EDITMSG" . diff-mode)
                 )
               auto-mode-alist))

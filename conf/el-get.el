@@ -20,7 +20,6 @@
           el-get
           helm
           markdown-mode
-          git-commit-mode
           haml-mode
           coffee-mode
           scss-mode
