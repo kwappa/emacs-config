@@ -25,4 +25,5 @@
           scss-mode
           rhtml-mode
           redo+
+          yaml-mode
           ))
