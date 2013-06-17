@@ -24,6 +24,6 @@
           coffee-mode
           scss-mode
           rhtml-mode
-          redo+
+          undo-tree
           yaml-mode
           ))
