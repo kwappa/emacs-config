@@ -103,6 +103,8 @@
              ))
 ;; ruby indent
 (load "ruby-indent")
+;; stop auto inserting magic comment
+(setq ruby-insert-encoding-magic-comment nil)
 
 ;;; my functions
 (load "my-functions")
