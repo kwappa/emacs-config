@@ -49,3 +49,14 @@
         (setq truncate-lines t)
         (setq truncate-partial-width-windows t)))
     (message "truncate-mode : %s" truncate-lines)))
+
+;===============================================================================
+;; Ruby hash rocketを1.9記法に置換
+;===============================================================================
+(defun ruby-anti-hash-rocket ()
+  (interactive)
+  (save-excursion
+    (setq replaced (replace-regexp-in-string ":\\([a-z0-9_]+\\)\s*=>" "\\1:" (buffer-string)))
+    (erase-buffer)
+    (insert replaced)
+    ))
