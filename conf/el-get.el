@@ -26,4 +26,5 @@
           rhtml-mode
           undo-tree
           yaml-mode
+          haskell-mode
           ))
