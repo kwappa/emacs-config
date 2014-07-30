@@ -19,4 +19,6 @@
           undo-tree
           yaml-mode
           haskell-mode
+          yasnippet
           ))
+
