@@ -44,6 +44,10 @@
 (define-key dired-mode-map "\d"   'dired-up-directory)
 (define-key dired-mode-map "\C-h" 'dired-up-directory)
 
+;; markdown-mode
+(custom-set-variables
+ '(markdown-command "/usr/local/bin/markdown"))
+
 ;;; display settings
 
 ;; show column number
