@@ -20,5 +20,6 @@
           yaml-mode
           haskell-mode
           yasnippet
+          go-mode
           ))
 
