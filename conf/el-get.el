@@ -13,6 +13,7 @@
           helm
           markdown-mode
           haml-mode
+          slim-mode
           coffee-mode
           scss-mode
           rhtml-mode
