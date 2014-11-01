@@ -94,6 +94,10 @@
 (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/"))
 (load-theme 'dark-laptop t)
 
+;; show trailing whitespace
+(when (boundp 'show-trailing-whitespace)
+  (setq-default show-trailing-whitespace t))
+
 ;;; indent
 (add-hook 'c-mode-common-hook
           '(lambda ()
