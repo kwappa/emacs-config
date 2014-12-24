@@ -48,6 +48,9 @@
 (custom-set-variables
  '(markdown-command "/usr/local/bin/markdown"))
 
+;; scss-mode
+(setq scss-compile-at-save nil)
+
 ;;; display settings
 
 ;; show column number
