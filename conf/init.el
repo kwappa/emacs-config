@@ -116,6 +116,12 @@
 (load "ruby-indent")
 ;; stop auto inserting magic comment
 (setq ruby-insert-encoding-magic-comment nil)
+;; coffee mode
+(add-hook 'coffee-mode-hook
+          '(lambda()
+             (set (make-local-variable 'tab-width) 2)
+             (set (make-local-variable 'coffee-tab-width) 2)
+             ))
 
 ;;; my functions
 (load "my-functions")
