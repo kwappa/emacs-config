@@ -136,9 +136,10 @@
 ;;; auto-mode-alist
 (setq auto-mode-alist
       (append '(
-                ("Rakefile" . ruby-mode)
-                ("Gemfile"  . ruby-mode)
-                ("\\.ru$"   . ruby-mode)
-                ("COMMIT_EDITMSG" . diff-mode)
+                ("Rakefile"        . ruby-mode)
+                ("Gemfile"         . ruby-mode)
+                ("\\.ru$"          . ruby-mode)
+                ("COMMIT_EDITMSG"  . diff-mode)
+                (".gitconfig"      . conf-mode)
                 )
               auto-mode-alist))
