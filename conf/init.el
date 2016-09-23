@@ -11,6 +11,9 @@
 (setq auto-save-default nil)            ; # files
 (setq make-backup-files nil)            ; ~ files
 
+;; specify directory to save temporary files
+(setq ac-comphist-file "~/.emacs.d/tmp/ac-comphist.dat")
+
 ;; scroll setting
 (setq scroll-conservatively 35
       scroll-margin          0
@@ -50,6 +53,21 @@
 
 ;; scss-mode
 (setq scss-compile-at-save nil)
+
+;; go-mode
+(add-to-list 'exec-path (expand-file-name "~/bin"))
+(eval-after-load "go-mode"
+  '(progn
+     (require 'go-autocomplete)
+     (require 'auto-complete-config)
+     (require 'go-eldoc)
+     (add-hook 'go-mode-hook 'go-eldoc-setup)
+     (set-face-attribute 'eldoc-highlight-function-argument nil
+                         :underline t :foreground "green"
+                         :weight 'bold)
+     (add-hook 'go-mode-hook 'flycheck-mode)
+     (add-hook 'before-save-hook 'gofmt-before-save)
+     ))
 
 ;;; display settings
 
