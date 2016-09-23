@@ -22,4 +22,5 @@
           haskell-mode
           go-mode
           go-autocomplete
+          go-eldoc
           ))
