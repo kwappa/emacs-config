@@ -51,6 +51,14 @@
 ;; scss-mode
 (setq scss-compile-at-save nil)
 
+;; go-mode
+(add-to-list 'exec-path (expand-file-name "~/bin"))
+(eval-after-load "go-mode"
+  '(progn
+     (require 'go-autocomplete)
+     (require 'auto-complete-config)
+     ))
+
 ;;; display settings
 
 ;; show column number

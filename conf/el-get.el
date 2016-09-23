@@ -21,4 +21,5 @@
           yaml-mode
           haskell-mode
           go-mode
+          go-autocomplete
           ))
