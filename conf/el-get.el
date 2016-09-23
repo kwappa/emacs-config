@@ -23,4 +23,5 @@
           go-mode
           go-autocomplete
           go-eldoc
+          flycheck
           ))

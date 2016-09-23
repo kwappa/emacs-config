@@ -62,6 +62,7 @@
      (set-face-attribute 'eldoc-highlight-function-argument nil
                          :underline t :foreground "green"
                          :weight 'bold)
+     (add-hook 'go-mode-hook 'flycheck-mode)
      ))
 
 ;;; display settings
