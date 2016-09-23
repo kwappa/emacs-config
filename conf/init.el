@@ -11,6 +11,9 @@
 (setq auto-save-default nil)            ; # files
 (setq make-backup-files nil)            ; ~ files
 
+;; specify directory to save temporary files
+(setq ac-comphist-file "~/.emacs.d/tmp/ac-comphist.dat")
+
 ;; scroll setting
 (setq scroll-conservatively 35
       scroll-margin          0
