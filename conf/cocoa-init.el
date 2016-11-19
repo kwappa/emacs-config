@@ -17,15 +17,22 @@
 ;; ignore to open new window(frame)
 (setq ns-pop-up-frames nil)
 
-;; =============================================================================
+;;==============================================================================
 ;; font setting
 ;;      あああああいいいいいうううううえええええおおおおお
 ;;      00112233440011223344001122334400112233440011223344
-;; =============================================================================
+;;
+;; あのイーハトーヴォの
+;; すきとおった風、
+;; 夏でも底に冷たさをもつ青いそら、
+;; うつくしい森で飾られたモーリオ市、
+;; 郊外のぎらぎらひかる草の波。
+;; 祇辻飴葛蛸鯖鰯噌庖箸
+;;==============================================================================
 (let* ((fontset-name "ricty") ; フォントセットの名前
        (size cocoa-default-font-size) ; ASCIIフォントのサイズ [9/10/12/14/15/17/19/20/...]
-       (asciifont "Ricty") ; ASCIIフォント
-       (jpfont    "Ricty") ; 日本語フォント
+       (asciifont "Ricty Diminished") ; ASCIIフォント
+       (jpfont    "Ricty Diminished") ; 日本語フォント
        (font (format "%s-%d:weight=normal:slant=normal" asciifont size))
        (fontspec (font-spec :family asciifont))
        (jp-fontspec (font-spec :family jpfont))
