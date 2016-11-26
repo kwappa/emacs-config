@@ -28,3 +28,21 @@
                       :weight 'extra-bold)
   )
 (add-hook 'diff-mode-hook 'diff-mode-setup-faces)
+
+;; web-mode
+(custom-set-faces
+ '(web-mode-doctype-face           ((t (:foreground "#4A8ACA"))))
+ '(web-mode-html-tag-face          ((t (:foreground "#4A8ACA"))))
+ '(web-mode-html-attr-name-face    ((t (:foreground "#87CEEB"))))
+ '(web-mode-html-attr-equal-face   ((t (:foreground "#FFFFFF"))))
+ '(web-mode-html-attr-value-face   ((t (:foreground "#D78181"))))
+ '(web-mode-comment-face           ((t (:foreground "#587F35"))))
+ '(web-mode-server-comment-face    ((t (:foreground "#587F35"))))
+
+ '(web-mode-css-at-rule-face       ((t (:foreground "#DFCF44"))))
+ '(web-mode-comment-face           ((t (:foreground "#587F35"))))
+ '(web-mode-css-selector-face      ((t (:foreground "#DFCF44"))))
+ '(web-mode-css-pseudo-class       ((t (:foreground "#DFCF44"))))
+ '(web-mode-css-property-name-face ((t (:foreground "#87CEEB"))))
+ '(web-mode-css-string-face        ((t (:foreground "#D78181"))))
+ )

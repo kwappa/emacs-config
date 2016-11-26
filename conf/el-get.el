@@ -24,4 +24,5 @@
           go-autocomplete
           go-eldoc
           flycheck
+          web-mode
           ))

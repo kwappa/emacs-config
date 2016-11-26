@@ -142,6 +142,20 @@
              (set (make-local-variable 'coffee-tab-width) 2)
              ))
 
+;; web-mode
+(setq web-mode-content-types-alist
+      '(("jsx" . "\\.js[x]?\\'")))
+(add-hook 'web-mode-hook
+          '(lambda ()
+             (setq web-mode-attr-indent-offset nil)
+             (setq web-mode-markup-indent-offset 2)
+             (setq web-mode-css-indent-offset 2)
+             (setq web-mode-code-indent-offset 2)
+             (setq web-mode-sql-indent-offset 2)
+             (setq indent-tabs-mode nil)
+             (setq tab-width 2)
+          ))
+
 ;;; my functions
 (load "my-functions")
 ;; toggle truncate
@@ -160,5 +174,6 @@
                 ("\\.ru$"          . ruby-mode)
                 ("COMMIT_EDITMSG"  . diff-mode)
                 (".gitconfig"      . conf-mode)
+                ("\\.js[x]?$"      . web-mode)
                 )
               auto-mode-alist))
