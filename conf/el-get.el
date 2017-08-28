@@ -19,7 +19,7 @@
           rhtml-mode
           undo-tree
           yaml-mode
-          haskell-mode
+          ;; haskell-mode
           go-mode
           go-autocomplete
           go-eldoc
